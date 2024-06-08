@@ -1,4 +1,4 @@
-# Title (replace with your title)
+# Regex-Tutorial
 
 In this guide, I'll provide an overview of Regular Expressions (Regex). Regex is a powerful tool for pattern matching in text. Here, we'll focus on using regex to match hexadecimal color codes. The regex we'll explore is /^#?([a-f0-9]{6}|[a-f0-9]{3})$/, which matches both 3-digit and 6-digit hexadecimal color codes, optionally preceded by a "#" symbol.
 
