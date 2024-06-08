@@ -29,14 +29,13 @@ Anchors are special characters that match positions within a string. They are cr
 
 ### Quantifiers
 Quantifiers specify how many instances of a character, group, or character class must be present for a match.They frequently include the minimum and maximum number of characters that your regex is looking for. Common quantifiers include:
-
-*: 0 or more times
-+: 1 or more times
-?: 0 or 1 time
-{n}: exactly n times
-{n,}: at least n times
-{n,m}: between n and m times
-For example, the regex /^[a-z0-9_-]{3,16}$/ is looking for any string between 3 and 16 characters that starts and ends with a combination of lowercase characters, the numbers 0–9, and the special characters of an underscore and a hyphen.
+- *: 0 or more times
+- +: 1 or more times
+- ?: 0 or 1 time
+- {n}: exactly n times
+- {n,}: at least n times
+- {n,m}: between n and m times
+- For example, the regex /^[a-z0-9_-]{3,16}$/ is looking for any string between 3 and 16 characters that starts and ends with a combination of lowercase characters, the numbers 0–9, and the special characters of an underscore and a hyphen.
 
 ### OR Operator
 The OR operator (|) allows matching one pattern or another. For instance, the regex #21ECF3|#21F1E2 matches either of the two specified color codes. Similarly, #([A-Fa-f0-9]{3}|[A-Fa-f0-9]{6}) matches hex codes of either 3 or 6 digits.
@@ -44,23 +43,23 @@ The OR operator (|) allows matching one pattern or another. For instance, the re
 ### Character Classes
 Character classes are predefined sets of characters represented with shorthand notations. Common classes include:
 
-\d: any digit (0-9)
-\D: any non-digit
-\w: any word character (letters, digits, and underscores)
-\W: any non-word character
-\s: any whitespace character
-\S: any non-whitespace character
-These notations make regex more concise and readable.
+- \d: any digit (0-9)
+- \D: any non-digit
+- \w: any word character (letters, digits, and underscores)
+- \W: any non-word character
+- \s: any whitespace character
+- \S: any non-whitespace character
+- These notations make regex more concise and readable.
 
 ### Flags
 Regex flags modify the search behavior. Common flags include:
 
-i: ignore case
-g: global search
-m: multiline mode
-s: dot all (matches newline characters)
-u: unicode support
-y: sticky mode (matches from the last match position)
+- i: ignore case
+- g: global search
+- m: multiline mode
+- s: dot all (matches newline characters)
+- u: unicode support
+- y: sticky mode (matches from the last match position)
 For example, the i flag makes regex case-insensitive.
 
 ### Grouping and Capturing
